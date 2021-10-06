@@ -52,7 +52,7 @@
 
 			<section class="chat">
 				<?php 
-					$mensagens = MySql::selectAll('tb_site.chat','ORDER BY data');
+					$mensagens = MySql::selectAll('tb_site.chat','ORDER BY data LIMIT 10');
 					foreach ($mensagens as $key => $value) {
 				?>
 							<div class="mensagem <?php echo ($value['user_name'] == $_SESSION['user']) ? 'my' : ''; ?>">
