@@ -1,0 +1,165 @@
+/*Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #311b92;
+}
+
+/*BootClass*/
+
+.wraper-content{
+	width: 100%;
+	max-width: 700px;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 30px;
+	margin-top: 100px;
+}
+
+.clear{clear: both;}
+
+/*Form*/
+
+.form-group{
+	margin: 15px 0;
+}
+
+input,textarea{
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
+
+input,textarea:focus{
+	outline: 0;
+}
+
+input[type=submit]{
+	max-width: 200px;
+	color: #fff;
+	background-color: #311b92;
+	font-size: 18px;
+	border: 0;
+	cursor: pointer;
+}
+
+label{
+	font-size: 22px;
+	font-weight: bolder;
+	color: #311b92;
+}
+
+/*Header*/
+
+header{
+	background-color: #311b92;
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-box-shadow: 0px 1px 14px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 14px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 14px 3px rgba(0,0,0,0.75);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+header h2{
+	padding: 0 20px;
+}
+
+header a{
+	line-height: 80px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 30px;
+	font-size: 22px;
+	font-weight: bolder;
+}
+
+/*Chat*/
+
+section.chat{
+	border: 1px solid #ccc;
+	padding: 15px;
+	height: 350px;
+	overflow: auto;
+}
+
+/*Enviar Mensagem*/
+
+.enviar-mensagem{
+	margin: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.enviar-mensagem textarea{
+	width: calc(100% - 50px);
+	height: 100px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	resize: none;
+}
+
+.enviar-mensagem span{
+	background-color: #311b92;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*Mensagem*/
+
+.mensagem{
+	padding: 5px;
+	font-size: 14px;
+	background-color: #b388ff;
+	color: #fff;
+	border-radius: 6px;
+	max-width: 90%;
+	border: 1px solid #7c4dff;
+	margin: 5px;
+	display: inline-block;
+}
+
+.mensagem.my{
+	background-color: #fff;
+	color: #000;
+	text-align: right;
+	float: right;
+}
+
+.mensagem.my .author{
+	display: none;
+}
+
+.mensagem.my span{
+	color: rgb(210, 210, 210);
+}
+
+.mensagem .author{
+	font-weight: bolder;
+}
+
+.mensagem span{
+	font-size: 12px;
+	color: rgb(230, 230, 230);
+}
